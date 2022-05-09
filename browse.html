@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Browse</title>
+    <link rel="stylesheet" href="browse.css" />
+    <link rel="shortcut icon" href="./favico.png" type="image/x-icon">
+  </head>
+  <body>
+    <!-- nav -->
+    <div id="nav" class="nav">
+      <a href="index.html"
+        ><img class="nav__logo" src="images/netflix-logo.png" alt=""
+      /></a>
+      <div class="nav-subcontent">
+        <h3><a href="#series">Series</a></h3>
+        <h3><a href="#flims">Flims</a></h3>
+      </div>
+    </div>
+
+    <!-- header -->
+    <header class="banner">
+      <div class="banner__contents">
+        <h1 class="banner__title">Joker</h1>
+
+        <h1 class="banner__description">
+          Forever alone in a crowd, failed comedian Arthur Fleck seeks
+          connection as he walks the streets of Gotham City. Arthur wears two
+          masks -- the one he paints for his day job as a clown, and the guise
+          he projects in a futile attempt to feel like he's part of the world
+          around him.
+        </h1>
+
+        <div id="light">
+          <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+          <video id="VisaChipCardVideo" controls>
+            <source
+              src="JOKER - Final Trailer - Now Playing In Theaters.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+
+        <div id="fade" onClick="lightbox_close();"></div>
+
+        <div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        </div>
+      </div>
+      <div class="banner--fadeBottom"></div>
+    </header>
+
+    <!-- Netflix Originals -->
+    <div class="row1">
+      <h2>NETFLIX ORIGINALS</h2>
+      <div class="row__posters">
+        <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/large-movie2.jpg"
+            alt=""
+          />
+        </button>
+
+        <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/Mismatched.jpg"
+            alt=""
+          />
+        </button>
+
+        <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/luststories.jpg"
+            alt=""
+          />
+        </button>
+
+        <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/drive.jpg"
+            alt=""
+          />
+        </button>
+
+        <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/Mrs._Serial_Killer_poster.jpg"
+            alt=""
+          />
+        </button>
+
+        <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/Hasmukh_Poster.jpg"
+            alt=""
+          />
+        </button>
+
+        <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/thefame.jpg"
+            alt=""
+          />
+        </button>
+
+        <button onclick="w3.toggleShow('.description')">
+          <img
+            class="row__poster row__posterLarge"
+            src="images/mai.jpg"
+            alt=""
+          />
+        </button>
+      </div>
+      <div class="description hide">
+        <p>
+          Bored with being the Lord of Hell, the devil relocates to Los Angeles,
+          where he opens a nightclub and forms a connection with a homicide detective.
+        </p><div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        <img src="images/lucifer.jpg" alt="" />
+
+      </div>
+    </div>
+
+    <!-- Trending Now -->
+    <div class="row2">
+      <h2 id="series">Trending Series</h2>
+      <div class="row__posters">
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/sexeducation.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/allofusaredead.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/moneyheist.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/peakyblinders.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/squidgames.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/strangerthings.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/sex_life.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description1')">
+          <img class="row__poster" src="images/lupin.jpg" alt="" />
+        </button>
+      </div>
+      <div class="description1 hide">
+        <p>
+          Insecure Otis has all the answers when it comes to sex advice, thanks
+          to his therapist mom. So rebel Maeve proposes a school sex-therapy clinic.
+        </p><div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        <img src="images/sexeducation.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Top Rated -->
+    <div class="row3">
+      <h2>Drama</h2>
+      <div class="row__posters">
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/sacredgames.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/ozark.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/Gangubai Kathiawadi.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/joker.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/raatakelihai.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/Narcosmexico.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/ludo.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description2')">
+          <img class="row__poster" src="images/gunjansaxena.jpgs" alt="" />
+        </button>
+      </div>
+      <div class="description2 hide">
+        <p>
+          A link in their pasts leads an honest cop to a fugitive gang boss,
+          whose cryptic warning spurs the officer on a quest to save Mumbai from cataclysm.
+        </p><div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        <img src="images/sacredgames.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Action -->
+    <div class="row3">
+      <h2 id="flims">Action</h2>
+      <div class="row__posters">
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/6underground.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/extraction.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/gunjansaxena.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/spiderman.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/adam.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/tenet.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/edgeof.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description8')">
+          <img class="row__poster" src="images/manoftai.jpg" alt="" />
+        </button>
+      </div>
+      <div class="description8 hide">
+        <p>
+          After faking his death, a tech billionaire recruits a team of international
+          operatives for a bold and bloody mission to take down a brutal dictator.
+        </p><div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        <img src="images/6underground.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Comedy -->
+    <div class="row4">
+      <h2>Comedies</h2>
+      <div class="row__posters">
+        <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/hangover.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/minnal.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/rednotice.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/johnny.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/ludo.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/Shazam.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/fukrey.jpg" alt="" />
+        </button>
+        
+        <button onclick="w3.toggleShow('.description4')">
+          <img class="row__poster" src="images/boss.jpg" alt="" />
+        </button>
+      </div>
+      <div class="description4 hide">
+        <p>
+          When the wolf pack reunites in Thailand for Stu's wedding, they wake
+          up one morning in a seedy hotel with no idea how they got there.
+        </p><div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        <img src="images/hangover.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Horror -->
+    <div class="row5">
+      <h2>Horror</h2>
+      <div class="row__posters">
+        <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/horror1.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/horror2.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/thenun.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/horror4.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/horror5.jpg" alt="" />
+        </button>
+        <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/evil.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/the call.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description5')">
+          <img class="row__poster" src="images/thesilence.jpg" alt="" />
+        </button>
+
+      </div>
+      <div class="description5 hide">
+        <p>
+          In this sequel, influencers looking to breathe new life into a Texas
+          ghost town encounter Leatherface, an infamous killer who wears
+          a mask of human skin.
+        </p><div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        <img src="images/horror1.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Romance -->
+    <div class="row6">
+      <h2>Romance</h2>
+      <div class="row__posters">
+        <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/badhai do.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/ala.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/kabir.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/jabwemet.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/kissing.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/dilruba.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/fifty.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description6')">
+          <img class="row__poster" src="images/chup.jpg" alt="" />
+        </button>
+      </div>
+      <div class="description6 hide">
+        <p>
+          A gay cop and a lesbian teacher enter a sham marriage to pacify 
+          their families but find that relationships — both real and fake — aren’t all
+          that easy.
+        </p><div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        <img src="images/badhai do.jpg" alt="" />
+      </div>
+    </div>
+
+    <!-- Children -->
+    <div class="row7">
+      <h2>Children</h2>
+      <div class="row__posters">
+        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/stuart.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/tmkoc.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/pokemon.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/hotel.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/bean.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/secretsofsummer.jpg" alt="" />
+        </button>
+
+        <button onclick="w3.toggleShow('.description7')">
+          <img class="row__poster" src="images/johnnytest.jpg" alt="" />
+        </button>
+      </div>
+      <div class="description7 hide">
+        <p>
+          When his parents adopt a mouse instead of a little boy, George 
+          realizes brothers come in all shapes and sizes. But Snowbell the cat
+          is not so welcoming.
+        </p><div class="banner__buttons">
+          <button class="banner__button" onclick="lightbox_open();">
+            Play
+          </button>
+        <img src="images/stuart.jpg" alt="" />
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Questions? Call 1-866-579-7172</p>
+      <div class="footer-cols">
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Ways To Watch</a></li>
+          <li><a href="#">Corporate Information</a></li>
+          <li><a href="#">Netflix Originals</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Redeem Gift Cards</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Speed Test</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Media Center</a></li>
+          <li><a href="#">Buy Gift Cards</a></li>
+          <li><a href="#">Cookie Preferences</a></li>
+          <li><a href="#">Legal Notices</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="browse.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  </body>
+</html>
